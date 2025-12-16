@@ -1,2 +1,28 @@
-# iherb_logger
-What appears to be a legal way to log iHerb products by visiting the product pages yourself
+# iHerb Logger
+
+WAS ONLY TESTED ON FIREFOX 
+
+Uses Manifest V3
+
+Logs an item's URL, name, price and inner-content (description, ingredients,
+etc.)
+
+This should be used together with AI or a python script to actually do the
+parsing on the resulting JSON file.
+
+## Features
+
+- Logs an item's details into local storage
+- Data can be downloaded and deleted
+
+## What it doesn't do
+
+- Doesn't do any math operations, it simply logs the data
+- will not sort the data for you
+
+## Use
+
+- Enable the extension
+- Visit the product pages of iHerb (has '/pr/' in the URL)
+- After visiting all the product pages you can then download the data as JSON
+- Feed the JSON file to either an AI or a script that will parse that for you

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "iHerb Logger",
+  "version": "1.0",
+  "icons": {
+    "48": "logger-48.png"
+  },
+  "action": {
+    "default_icon": "logger-48.png",
+    "default_title": "iHerb Logger Data",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.iherb.com/pr/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

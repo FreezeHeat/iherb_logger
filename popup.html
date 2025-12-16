@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iHerb Data Logger</title>
+    <style>
+        body { min-width: 400px; padding: 10px; font-family: sans-serif; }
+        .controls { margin-bottom: 10px; }
+        .data-row { border-bottom: 1px solid #eee; padding: 8px 0; display: flex; justify-content: space-between; align-items: center; }
+        .data-info { flex-grow: 1; }
+        .data-actions button { margin-left: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h3>Product Log</h3>
+    <div class="controls">
+        <button id="downloadAll">Download All</button>
+        <button id="deleteAll">Delete All</button>
+    </div>
+    <div id="dataList">No data logged yet.</div>
+    <script src="popup.js"></script>
+</body>
+</html>
