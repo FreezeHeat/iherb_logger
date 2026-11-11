@@ -23,6 +23,10 @@ parsing on the resulting JSON file.
 ## Use
 
 - Enable the extension
+  -- Enter the about:debugging URL in firefox
+  -- Load temporary add-on
+  -- choose manifest.json
+
 - Visit the product pages of iHerb (has '/pr/' in the URL)
 - After visiting all the product pages you can then download the data as JSON
 - Feed the JSON file to either an AI or a script that will parse that for you
